@@ -38,5 +38,6 @@ Route::group(['middleware' => ['checkRole:admin']], function () {
   Route::post('/admin/addProduct', [ProductController::class, 'store']);
   Route::get('/admin/editProduct/{id}', [ProductController::class, 'edit']);
   Route::post('/admin/editProduct/{id}', [ProductController::class, 'update']);
+  Route::get('/admin/detailProduct/{id}', [ProductController::class, 'show']);
   Route::post('/admin/deleteProduct', [ProductController::class, 'destroy']);
 });

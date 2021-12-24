@@ -34,6 +34,7 @@
                     <td>{{$product->name}}</td>
                     <td>{{$product->price}}</td>
                     <td>
+                        <a href="/admin/detailProduct/{{$product->id}}" class="btn btn-warning d-inline">Detail</a>
                         <a href="/admin/editProduct/{{$product->id}}" class="btn btn-warning d-inline">Edit</a>
                         <button type="button" class="btn btn-danger btn-delete d-inline" data-toggle="modal" data-target="#deleteBackdrop" data-id="{{$product->id}}" data-name="{{$product->name}}">Delete</button>
                     </td>
